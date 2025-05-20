@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#161616"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/_847908_arrow_back_left_icon"
+            android:id="@+id/backbutton"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backbutton"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/button_border_white"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/comment"
+                android:layout_marginTop="4dp"
+                android:tint="#666666"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="support"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <!-- Profile Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/profile"
+                android:layout_marginEnd="12dp"
+                app:civ_border_width="2dp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Divya Singhal"
+                    android:textColor="#bcbcbc"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/member_since"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="member since Dec, 2020"
+                    android:textSize="14sp"
+                    android:textColor="#888888" />
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/edit"
+                android:layout_marginEnd="12dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#2e2e2e"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#121212"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                app:civ_border_width="1dp"
+                android:layout_height="30dp"
+                android:src="@drawable/car"
+                app:civ_border_color="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="get to know your vehicles, inside out"
+                    android:textColor="#858585"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:text="CRED garage"
+                        android:textColor="#e6e6e6"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/outline_arrow_forward_24"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="20dp"
+                app:civ_border_width="1dp"
+                android:layout_height="20dp"
+                android:id="@+id/cerditscoreimage"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/speedometer"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="credit score"
+                android:id="@+id/creditscore"
+                android:layout_toRightOf="@+id/cerditscoreimage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textColor="#a9a9a9"
+                android:textSize="14sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/creditscore"
+                android:layout_centerVertical="true"
+                android:text="• REFRESH AVAILABLE"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"
+                android:textColor="#62b57e"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="757"
+                android:layout_toLeftOf="@+id/creditscoreforward"
+                android:textColor="#e7e7e7"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/creditscoreforward"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/outline_arrow_forward_24"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#232323"
+            android:layout_margin="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="20dp"
+                app:civ_border_width="1dp"
+                android:layout_height="20dp"
+                android:id="@+id/cashbackImage"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/rupee"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lifetime cashback"
+                android:id="@+id/cashback"
+                android:layout_toRightOf="@+id/cashbackImage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textColor="#a9a9a9"
+                android:textSize="14sp" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="₹3"
+                android:layout_toLeftOf="@+id/cashbackforward"
+                android:textColor="#e7e7e7"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cashbackforward"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/outline_arrow_forward_24"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#232323"
+            android:layout_margin="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="20dp"
+                app:civ_border_width="1dp"
+                android:layout_height="20dp"
+                android:id="@+id/bankbalanceimage"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/upi"
+                android:layout_centerVertical="true"
+                app:civ_border_color="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bank balance"
+                android:id="@+id/bankbalance"
+                android:layout_toRightOf="@+id/bankbalanceimage"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:textColor="#a9a9a9"
+                android:textSize="14sp" />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="check"
+                android:layout_toLeftOf="@+id/bankbalanceforward"
+                android:textColor="#e7e7e7"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bankbalanceforward"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/outline_arrow_forward_24"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#232323"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:text="YOUR REWARDS &amp; BENEFITS"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#434343"
+            android:textSize="16dp"
+            android:layout_margin="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <TextView
+            android:text="cashback balance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/balance"
+            android:textColor="#d2d2d2"
+            android:layout_marginLeft="15dp"
+            android:textSize="14sp" />
+
+
+            <TextView
+                android:text="₹0"
+                android:textColor="#6e6e6e"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="16dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/outline_arrow_forward_ios_24"
+                android:layout_alignParentRight="true"/>
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#232323"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="coins"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="#d2d2d2"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:text="26,46,583"
+                        android:textColor="#6e6e6e"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/outline_arrow_forward_ios_24"
+                    android:layout_alignParentRight="true"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#232323" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text="win upto rs 1000"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textColor="#d2d2d2"
+                        android:layout_marginLeft="15dp"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:text="refer and earn"
+                        android:textColor="#6e6e6e"
+                        android:textSize="15sp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="16dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/outline_arrow_forward_ios_24"
+                    android:layout_alignParentRight="true"/>
+
+
+
+
+            </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#232323" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="YOUR REWARDS &amp; BENEFITS"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#434343"
+            android:textSize="16dp"
+            android:layout_margin="15dp"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
